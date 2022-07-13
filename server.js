@@ -1,5 +1,5 @@
 'use strict';
-
+const bootstrap = require('global-agent/bootstrap');
 const Express = require('express');
 const router = require('./lib');
 
