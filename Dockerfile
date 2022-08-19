@@ -3,7 +3,6 @@ WORKDIR /usr/src/app/google-play-api
 COPY . .
 RUN cd /usr/src/app/google-play-api && \
     npm install && \
-    rm -rf /var/lib/apt/lists/* && \
-    apt-get clean
+    rm -rf /var/lib/apt/lists/*
 EXPOSE 3000
 CMD ["npm", "start"]
